@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MediaView fx:id="montage" fitHeight="800.0" fitWidth="800.0" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="home" layoutX="665.0" layoutY="32.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="40.0" prefWidth="100.0" text="Button" />
+            <ListView fx:id="dinosaursList" layoutX="321.0" layoutY="121.0" prefHeight="300.0" prefWidth="450.0" />
+            <Label fx:id="numDinos" layoutX="29.0" layoutY="205.0" mouseTransparent="true" prefHeight="30.0" prefWidth="140.0" text="Label" />
+            <Label fx:id="numDinosFill" layoutX="195.0" layoutY="205.0" mouseTransparent="true" prefHeight="30.0" prefWidth="120.0" text="Label" />
+            <Label fx:id="threatLevelFill" layoutX="195.0" layoutY="282.0" mouseTransparent="true" prefHeight="30.0" prefWidth="120.0" text="Label" />
+            <Label fx:id="threatLevel" layoutX="29.0" layoutY="282.0" mouseTransparent="true" prefHeight="30.0" prefWidth="160.0" text="Label" />
+            <Label fx:id="zoneLabel" layoutX="29.0" layoutY="32.0" mouseTransparent="true" prefHeight="75.0" prefWidth="625.0" text="Label" />
+            <StackPane layoutX="29.0" layoutY="441.0">
+               <children>
+                  <Pane fx:id="addPane" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane layoutX="29.0" layoutY="441.0" prefHeight="335.0" prefWidth="359.0">
+                     <children>
+                        <Label fx:id="addLabel" layoutX="19.0" layoutY="14.0" mouseTransparent="true" prefHeight="40.0" prefWidth="326.0" text="Label" />
+                        <Label fx:id="addName" layoutX="19.0" layoutY="87.0" mouseTransparent="true" prefHeight="30.0" prefWidth="88.0" text="Label" />
+                        <Label fx:id="addType" layoutX="19.0" layoutY="146.0" mouseTransparent="true" prefHeight="30.0" prefWidth="88.0" text="Label" />
+                        <Label fx:id="addCarnivore" layoutX="19.0" layoutY="195.0" mouseTransparent="true" prefHeight="30.0" prefWidth="150.0" text="Label" />
+                        <RadioButton fx:id="addYes" layoutX="191.0" layoutY="195.0" mnemonicParsing="false" text="RadioButton">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="yesNoRadios" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="addNo" layoutX="272.0" layoutY="195.0" mnemonicParsing="false" text="RadioButton" toggleGroup="$yesNoRadios" />
+                        <Button fx:id="add" layoutX="245.0" layoutY="281.0" mnemonicParsing="false" onAction="#addButton" prefHeight="40.0" prefWidth="100.0" text="Button" />
+                        <TextField fx:id="addNameTextField" layoutX="124.0" layoutY="87.0" prefHeight="30.0" prefWidth="221.0" />
+                        <TextField fx:id="addTypeTextField" layoutX="124.0" layoutY="146.0" prefHeight="30.0" prefWidth="221.0" />
+                        <Label fx:id="addSuccess" layoutX="19.0" layoutY="234.0" mouseTransparent="true" prefHeight="40.0" prefWidth="326.0" text="Label" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane layoutX="412.0" layoutY="441.0">
+               <children>
+                  <Pane fx:id="relocatePane" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane layoutX="412.0" layoutY="441.0" prefHeight="335.0" prefWidth="359.0">
+                     <children>
+                        <Label fx:id="relocateLabel" layoutX="14.0" layoutY="14.0" mouseTransparent="true" prefHeight="40.0" prefWidth="326.0" text="Label" />
+                        <Button fx:id="relocate" layoutX="220.0" layoutY="281.0" mnemonicParsing="false" onAction="#relocateButton" prefHeight="40.0" prefWidth="120.0" text="Button" />
+                        <TextField fx:id="relocateNameTextField" layoutX="119.0" layoutY="90.0" prefHeight="30.0" prefWidth="221.0" />
+                        <Label fx:id="relocateName" layoutX="14.0" layoutY="90.0" mouseTransparent="true" prefHeight="30.0" prefWidth="88.0" text="Label" />
+                        <Label fx:id="relocateZoneCode" layoutX="14.0" layoutY="153.0" mouseTransparent="true" prefHeight="30.0" prefWidth="150.0" text="Label" />
+                        <TextField fx:id="relocateZoneCodeTextField" layoutX="220.0" layoutY="153.0" prefHeight="30.0" prefWidth="120.0" />
+                        <Label fx:id="relocateSuccess" layoutX="14.0" layoutY="234.0" mouseTransparent="true" prefHeight="40.0" prefWidth="326.0" text="Label" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <Button fx:id="viewButton" layoutX="29.0" layoutY="381.0" mnemonicParsing="false" onAction="#viewDinos" prefHeight="40.0" prefWidth="284.0" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

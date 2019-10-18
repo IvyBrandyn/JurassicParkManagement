@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MediaView fx:id="montage" fitHeight="800.0" fitWidth="800.0" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="home" layoutX="665.0" layoutY="32.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="40.0" prefWidth="100.0" text="Button" />
+            <Label fx:id="zoneLabel" layoutX="29.0" layoutY="32.0" mouseTransparent="true" prefHeight="75.0" prefWidth="625.0" text="Label" />
+            <StackPane layoutX="152.0" layoutY="155.0" prefHeight="554.0" prefWidth="496.0">
+               <children>
+                  <Pane fx:id="dinosaurPane" prefHeight="200.0" prefWidth="200.0" />
+                  <Pane layoutX="412.0" layoutY="441.0" prefHeight="490.0" prefWidth="496.0">
+                     <children>
+                        <Label fx:id="dinosaurName" layoutX="85.0" layoutY="449.0" mouseTransparent="true" prefHeight="40.0" prefWidth="326.0" text="Label" />
+                        <Label fx:id="dinosaurType" layoutX="85.0" layoutY="500.0" mouseTransparent="true" prefHeight="40.0" prefWidth="326.0" text="Label" />
+                        <ImageView fx:id="dinosaurImage" fitHeight="414.0" fitWidth="378.0" layoutX="59.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

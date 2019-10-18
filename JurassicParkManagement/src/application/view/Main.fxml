@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <MediaView fx:id="montage" fitHeight="800.0" fitWidth="800.0" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="zoneB" layoutX="119.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Button fx:id="zoneD" layoutX="263.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Button fx:id="zoneG" layoutX="407.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Button fx:id="zoneR" layoutX="551.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Button fx:id="zoneTY" layoutX="335.0" layoutY="609.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Button fx:id="zoneTR" layoutX="192.0" layoutY="609.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Button fx:id="zoneX" layoutX="478.0" layoutY="609.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#zoneSelection" prefHeight="90.0" prefWidth="130.0" text="Button" />
+            <Label fx:id="selectZone" layoutX="126.0" layoutY="400.0" mouseTransparent="true" prefHeight="59.0" prefWidth="548.0" text="Label" />
+            <Label fx:id="welcome" layoutX="122.0" layoutY="49.0" mouseTransparent="true" prefHeight="46.0" prefWidth="237.0" text="Label" />
+            <ImageView fx:id="parkImage" fitHeight="293.0" fitWidth="431.0" layoutX="202.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

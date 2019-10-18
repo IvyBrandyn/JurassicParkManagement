@@ -1,0 +1,38 @@
+#parkImage{
+	-fx-image: url("../../src/application/data/parkLogo.png");
+}
+
+.label{
+	-fx-font-family: "Algerian", decorative, serif;
+	-fx-font-size: 32px;
+	-fx-text-fill: white;
+	-fx-alignment: center;
+	-fx-background-radius: 10;
+	-fx-background-color: black;
+	-fx-border-color: white;
+	-fx-border-width: 2;
+	-fx-border-style: solid;
+	-fx-border-radius: 10;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 50, 0, 0, 0);
+}
+
+.button{
+	-fx-background-color: #800000;
+	-fx-cursor: hand;
+	-fx-background-radius: 10;
+	-fx-font-family: "Algerian", decorative, serif;
+	-fx-font-size: 48px;
+	-fx-text-fill: white;
+	-fx-border-color: white;
+	-fx-border-width: 2;
+	-fx-border-style: solid;
+	-fx-border-radius: 10;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 30, 0, 0, 0);
+}
+
+.button:hover{
+	-fx-background-color: #ff0000;
+	-fx-font-weight: bold;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 60, 0, 0, 0);
+}
